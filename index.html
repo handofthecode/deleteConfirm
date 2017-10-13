@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<title>Delete Confirmation</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"
+		  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+		  crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js">
+		</script>
+	</head>
+	<body>
+		<ul id="todos">
+			<script id="entry-template" type="text/x-handlebars-template">
+				<li class="todo">
+					<span class="title">{{title}}</span><span class="cross"></span>
+				</li>
+			</script>
+		</ul>
+		<div id="confirm">
+			<p>Are you sure you want to delete <span id="name"></span></p>
+			<button id="yes">Yes</button>
+			<button id="no">No</button>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  font: normal 20px Helvetica;
+}
+.cross {
+  display: inline-block;  
+  background: red;
+  height: 2.5em;
+  position: relative;
+  width: .5em;
+  float: right;
+  margin-right: 30px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.cross:after {
+  background: red;
+  content: "";
+  height: .5em;
+  left: -1em;
+  position: absolute;
+  top: 1em;
+  width: 2.5em;
+  transform: rotate(15deg);
+}
+.cross:hover {
+  transform: scale(2) rotate(30deg);
+}
+li.todo {
+  border: solid 1px black;
+  background-color: green;
+  width: 500px;
+  overflow: auto;
+  height: 50px;
+  color: white;
+  margin: 30px;
+}
+li.todo:hover {
+  overflow: visible;
+}
+.title {
+  vertical-align: middle;
+  margin: auto 10px;
+}
+#confirm {
+  background-color: blue;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  padding: 40px;
+
+  z-index: 2;
+  display: none;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
